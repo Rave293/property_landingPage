@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Listings | Bayut</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+       <!-- main-header  -->
+       <header>
+        <div class="nav-bar">
+            <h1>LivingHome<span class="footer-text">Properties</span></h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Properties</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="signup">
+                <button>Sign Up</button>
+            </div>
+        </div>
+      <!-- NAV-CONTENT   -->
+       <div class="nav-content">
+        <h4>Explore a Wide Range of Properties</h4>
+        <p>Elevate Your <br>Living Experience</p>
+         <button onclick="onClick()">ClickMe</button>
+       </div>
+    </header>
+
+    <!-- DEATAILS-SEC -->
+    <div class="details">
+        <div  class="detail-con">
+          <h4>No1</h4>
+          <h2>Research Market 📑</h2>
+          <h4>At [Living Home Property], we provide data-driven insights and local expertise to keep you ahead of market <br> trends. Whether buying, selling, or investing, our tailored analysis ensures you make confident, informed decisions every step of the way.</h4>
+  
+       </div>
+       <div class="detail-con">
+          <h4>No2</h4>
+          <h2>Secure Financing 💸</h2>
+          <h4>At [Living Home Property], we simplify the path to your dream <br> home with expert guidance on financing options. From tailored loan solutions to trusted lender connections, we help you secure the right financing with confidence and ease.</h4>
+          
+       </div>
+  
+       <div class="detail-con">
+          <h4>No3</h4>
+          <h2>Close Deal 🧑‍💼</h2>
+          <h4>At [[Living Home Property], we ensure smooth and successful closings with <br> expert negotiation and attention to detail. From contracts to keys, we guide you every step of the way for a seamless and stress-free experience.</h4>
+          
+       </div>
+      </div>
+
+      
+        <!-- ABOUTUS-SECTION -->
+        <div class="aboutus">
+            <h1>/About us</h1>
+        <div class="aboutus-content">
+            <hr> <p>About Us
+                At Living Home Properties, we believe a home is more than just a place—it's a foundation for your dreams and memories. With years of experience in real estate, we specialize in connecting people with properties that inspire, comfort, and grow with them.
+                
+                🏡 Our Mission
+                To simplify the home-buying journey and ensure you find a space where you can truly thrive.
+                
+                🌍 What Sets Us Apart
+                
+                Personalized Service: We listen, understand, and tailor solutions to your needs.
+                Extensive Network: Access to premier listings in prime locations.
+                Transparency & Trust: Your satisfaction is our top priority.
+                Whether you're buying, selling, or investing, we're here to make every step seamless and rewarding. Let’s find a place you’ll love to call home.
+                
+                💬 Let’s Connect!
+                Your dream home is just a conversation away.</p>
+         </div>       
+    
+    
+
+
+    <!-- PROPERTY-LISTING -->
+<section class="price-sec">
+<div class="container">
+<h1>Property Listings</h1>
+  <!-- THE SEARCHING INPUT -->
+<div class="search-controls">
+<input
+type="text"
+id="searchInput"
+placeholder="Search by location or title..."
+class="search-input"
+>
+<!-- THE SEARCHING BUTTON -->
+<button id="searchButton" class="search-button">Search</button> 
+</div>
+ <!-- SORTING CONTROL -->
+<div class="sorting-controls">
+<select id="sortBy">
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+<option value="location">Location</option>
+</select>
+</div>
+</div>
+</section>
+
+<main class="container">
+<div id="loading" class="loading">Loading properties...</div>
+<div id="error" class="error"></div>
+<div id="propertyList" class="property-grid"></div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-location">
+            <h2>Main Street Plaza, Downtown Business District</h2>
+            <p>+234 (080) 77789</p>
+        </div>
+
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#property">Property</a></li>
+            <li><a href="#projects">Our Projects</a></li>
+            <li><a href="#market">Market</a></li>
+        </ul>
+
+        <div class="footer-contact">
+            <h2>Get in touch</h2>
+            <p><a href="mailto:Livinghome@Bussines.com">Livinghome@Bussines.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-end">
+        <h1>/LivingHome<span class="footer-text"> Properties</span></h1>
+        <h3><a href="#terms">Terms & Conditions</a> | <a href="#privacy">Privacy Policy</a></h3>
+    </div>
+</footer>
+
+
+<script src="./javascript/api.js"></script>
+<script src="./javascript/app.js"></script>
+<script src="./javascript/propertyList.js"></script>
+<script>
+    function onClick(){
+        alert('welcome to living home properties')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    }
+
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        background-image: url("./images/backgroundimage.jpg");
+        background-size: cover;
+        height: 600px;
+        color: white;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    ul , li , a {
+        display: inline;
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
+
+  a:hover{
+        cursor: pointer;
+        border-bottom:3px solid greenyellow;
+        transition: 2s;
+    }
+    
+    .nav-content{
+        position: absolute;
+        margin-top: 10rem;
+    }
+    .nav-content h4{
+        font-family: sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1rem;
+    }
+    .nav-content p{
+        font-size: 5.3rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    
+    }
+    .nav-content button{
+        width: 350px;
+        height: 40px;
+        margin-left: 20px;
+        color: rgb(16, 15, 15);
+        border-radius: 12px;
+        font-family:"Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .signup button{
+        width: 118px;
+        border-radius: 12px;
+        height: 30px;
+    }
+    .details{
+        display: flex;
+        text-align: center;
+        margin-top: 3rem;
+        border-top: 3px solid rgba(0, 0, 0, 0.111);
+        border-bottom: 3px solid rgba(0, 0, 0, 0.111);
+        height: 160px;
+        padding: 4px;
+    }
+    
+    .detail-con  h4{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-family: "PT Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.1px;
+    }
+    .detail-con p{
+    font-size: 0.9rem;
+    font-family: "PT Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }  
+    
+    .aboutus{
+        margin-top: 4rem;
+    }
+    .aboutus h1{
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        width: 80%;
+        font-family: "PT Sans", sans-serif;
+      font-style: normal;
+    }
+    .aboutus-content{
+        display: flex;
+        border-bottom: 1px solid #333333af;
+        height: 180px;
+    }
+    .aboutus hr{
+        width: 64%;
+    }
+    
+    
+
+    .price-sec{
+        margin-top: 3rem;
+    }
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+    
+    .property-list {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    }
+    
+    .property-list h1 {
+    color: #333;
+    }
+    
+    .sorting-controls {
+    margin-top: 1rem;
+    }
+    
+    .sorting-controls select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    }
+    
+    .property-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+    }
+    
+    .property-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    }
+    
+    .property-card:hover {
+    transform: translateY(-5px);
+    }
+    
+    .property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+    
+    .property-info {
+    padding: 1rem;
+    }
+    
+    .property-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    }
+    
+    .property-price {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 1.1rem;
+    }
+    
+    .property-location {
+    color: #666;
+    font-size: 0.9rem;
+    }
+    
+    .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    }
+    
+    .error {
+    color: #e74c3c;
+    text-align: center;
+    padding: 1rem;
+    display: none;
+    }
+    
+    .search-controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    }
+    
+    .search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    }
+    
+    .search-button {
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+    .search-button:hover {
+    background-color: #27ae60;
+    }
+    
+    @media (max-width: 768px) {
+    .property-grid {
+    grid-template-columns: 1fr;
+    }
+    .search-controls {
+    flex-direction: column;
+    }
+    }
+    
+    .no-results {
+    text-align: center;
+    padding: 2rem;
+    grid-column: 1 / -1;
+    color: #666;
+    font-size: 1.1rem;
+    }
+    
+    footer {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        padding: 20px 40px;
+        font-family: 'Arial', sans-serif;
+        margin-top: 4rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #7f8c8d;
+        padding-bottom: 20px;
+    }
+    
+    .footer-location h2,
+    .footer-contact h2 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .footer-location p,
+    .footer-contact p {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-links li a {
+        text-decoration: none;
+        color: #ecf0f1;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+    
+    .footer-links li a:hover {
+        color: #3498db;
+    }
+    
+    .footer-contact a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+    }
+    
+    .footer-contact a:hover {
+        color: #1abc9c;
+    }
+    
+    .footer-end {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .footer-end h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .footer-end .footer-text {
+        color: #0fecc0;
+    }
+    
+    .footer-end h3 {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+    
+    .footer-end h3 a {
+        text-decoration: none;
+        color: #ecf0f1;
+        transition: color 0.3s;
+    }
+    
+    .footer-end h3 a:hover {
+        color: #e74c3c;
+    }
+    .footer-text{
+        color: rgb(10, 243, 169);
+    } 
+    
+    
+    @media only screen and (max-width:600px){
+       .header{
+        height: 300px;
+       }
+       
+        .nav-bar h1{
+            font-size: 0.5rem;
+            }   
+
+        .nav-bar a , li {
+            display: inline;
+            text-decoration: none;
+            color: white;
+            font-size: 0.3rem;
+        }
+        ul{
+            margin-bottom: 7px;
+            padding: 0.2px;
+        
+        }
+        .nav-content{
+            margin-top: 10rem;
+        }
+        .nav-content p{
+            font-size: 2.9rem;
+        }
+        .nav-content button{
+            width: 200px;
+            height: 40px;
+            margin-left: 10px;
+            color: rgb(16, 15, 15);
+            border-radius: 12px;
+            font-family:"Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .signup{
+            display: inline-flex;
+            gap: 12px;
+            margin-top: 4px;
+            margin-right: 1px;
+        }
+       
+        .signup button{
+            width: 58px;
+            border-radius: 12px;
+            height: 20px;
+            font-size: 0.5rem;
+        }
+        .details{
+            display: flex;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 3px solid rgba(0, 0, 0, 0.111);
+            border-bottom: 3px solid rgba(0, 0, 0, 0.111);
+            padding: 0.5px;
+            height: 160px;
+            gap: 4px;
+        }
+        .detail-con  h4{
+            margin-top: 5px;
+            font-weight: 300;
+            padding: 4px;
+            font-size: 0.5rem;
+            gap: 2px;
+            line-height: 0.6rem;
+            }
+            .detail-con h2{
+            font-size: 0.6rem;
+            }
+            .aboutus h1{
+                font-size: 2.3rem;
+            }
+        .aboutus-content p{
+            font-size: 0.6rem;
+        }
+            .footer-end h1{
+                font-size: 2rem;
+                margin-left: 20px;
+               }
+    }
+    
+    /* FOR LARGE SCREEN */
+    @media only screen and  (min-width:601px) and (max-width:768px){
+        .nav-bar h1{
+            font-size: 0.8rem;
+        }
+        .nav-bar ul{
+            margin-right: 5px;
+        }
+        .nav-bar a , li {
+            display: inline;
+            text-decoration: none;
+            color: white;
+            font-size: 0.7rem;
+        }
+        .nav-content p{
+            font-size: 2.9rem;
+        }
+        .nav-content button{
+            width: 200px;
+            height: 40px;
+            margin-left: 10px;
+            color: rgb(16, 15, 15);
+            border-radius: 12px;
+            font-family:"Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .signup{
+            display: inline-flex;
+            gap: 12px;
+            margin-top: 4px;
+            margin-right: 6px;
+        }
+        .signup h2{
+            font-size: 1rem;
+            margin-top: 0.3rem;
+        }
+        .signup button{
+            width: 100px;
+            border-radius: 12px;
+            height: 30px;
+        }
+        .details{
+            display: flex;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 3px solid rgba(0, 0, 0, 0.111);
+            border-bottom: 3px solid rgba(0, 0, 0, 0.111);
+            padding: 4px;
+            height: 160px;
+            gap: 3px;
+        }
+        .detail-con  h4{
+            margin-top: 5px;
+            font-weight: 300;
+            padding: 2px;
+            font-size: 0.6rem;
+            }
+            .detail-con h2{
+            font-size: 0.7rem;
+            }
+    .aboutus h1{
+        font-size: 2.3rem;
+    }  
+    .aboutus-content p{
+        font-size: 0.9rem;
+    }  
+            .footer-end h1{
+                font-size: 2rem;
+                margin-left: 20px;
+               }
+    }
+
+    @media only  screen and  (min-width:769px) and  (max-width:1200px){
+        .nav-bar h1{
+            font-size: 0.8rem;
+        }
+        .nav-bar ul{
+            margin-right: 5px;
+        }
+        .nav-bar a , li {
+            display: inline;
+            text-decoration: none;
+            color: white;
+            font-size: 0.7rem;
+        }
+        .nav-content p{
+            font-size: 2.9rem;
+        }
+        .signup{
+            display: inline-flex;
+            gap: 12px;
+            margin-top: 4px;
+            margin-right: 6px;
+        }
+        .signup h2{
+            font-size: 1rem;
+            margin-top: 0.3rem;
+        }
+        .signup button{
+            width: 100px;
+            border-radius: 12px;
+            height: 30px;
+        }
+        .details{
+            display: flex;
+            text-align: center;
+            margin-top: 3rem;
+            border-top: 3px solid rgba(0, 0, 0, 0.111);
+            border-bottom: 3px solid rgba(0, 0, 0, 0.111);
+            padding: 4px;
+            height: 160px;
+            gap: 3px;
+        }
+        .detail-con  h4{
+            margin-top: 5px;
+            font-weight: 300;
+            padding: 2px;
+            font-size: 0.7rem;
+            }
+            .detail-con h2{
+            font-size: 0.7rem;
+            }
+            .aboutus .image-paragraph{
+                margin-left: 5rem;
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            .footer-end h1{
+                font-size: 2rem;
+                margin-left: 20px;
+               }
+    
+    }
+    
+    
